@@ -12,6 +12,10 @@
 		5A179DEB2084E86A00855A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A179DE92084E86A00855A43 /* Main.storyboard */; };
 		5A179DED2084E86D00855A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A179DEC2084E86D00855A43 /* Assets.xcassets */; };
 		5A179DF02084E86D00855A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A179DEE2084E86D00855A43 /* LaunchScreen.storyboard */; };
+		5AF33B0820890CD200437892 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF33AFC20890CD000437892 /* Info.plist */; };
+		5AF33B0920890CD200437892 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF33AFD20890CD100437892 /* TextFieldEffects.swift */; };
+		5AF33B1220890CD200437892 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF33B0720890CD200437892 /* HoshiTextField.swift */; };
+		5AF33B152089198B00437892 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF33B142089198B00437892 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,11 @@
 		5A179DEC2084E86D00855A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A179DEF2084E86D00855A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A179DF12084E86D00855A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AF33AFC20890CD000437892 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AF33AFD20890CD100437892 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		5AF33B0520890CD200437892 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		5AF33B0720890CD200437892 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		5AF33B142089198B00437892 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				5A179DE42084E86A00855A43 /* OTSApp */,
+				5AF33B1320890CD900437892 /* TextField */,
 				5A179DE32084E86A00855A43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +66,24 @@
 			children = (
 				5A179DE52084E86A00855A43 /* AppDelegate.swift */,
 				5A179DE72084E86A00855A43 /* ViewController.swift */,
+				5AF33B142089198B00437892 /* RegisterViewController.swift */,
 				5A179DE92084E86A00855A43 /* Main.storyboard */,
 				5A179DEC2084E86D00855A43 /* Assets.xcassets */,
 				5A179DEE2084E86D00855A43 /* LaunchScreen.storyboard */,
 				5A179DF12084E86D00855A43 /* Info.plist */,
 			);
 			path = OTSApp;
+			sourceTree = "<group>";
+		};
+		5AF33B1320890CD900437892 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				5AF33B0720890CD200437892 /* HoshiTextField.swift */,
+				5AF33AFC20890CD000437892 /* Info.plist */,
+				5AF33B0520890CD200437892 /* TextFieldEffects.h */,
+				5AF33AFD20890CD100437892 /* TextFieldEffects.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF33B0820890CD200437892 /* Info.plist in Resources */,
 				5A179DF02084E86D00855A43 /* LaunchScreen.storyboard in Resources */,
 				5A179DED2084E86D00855A43 /* Assets.xcassets in Resources */,
 				5A179DEB2084E86A00855A43 /* Main.storyboard in Resources */,
@@ -136,7 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A179DE82084E86A00855A43 /* ViewController.swift in Sources */,
+				5AF33B152089198B00437892 /* RegisterViewController.swift in Sources */,
+				5AF33B1220890CD200437892 /* HoshiTextField.swift in Sources */,
 				5A179DE62084E86A00855A43 /* AppDelegate.swift in Sources */,
+				5AF33B0920890CD200437892 /* TextFieldEffects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
